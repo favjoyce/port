@@ -1229,7 +1229,7 @@ html {
         /* background-color: white; */
     }
     .highlight{
-     font-size: 27px;
+     font-size: 24px;
      /* background-color: #0f0; */
     }
 }
@@ -1452,7 +1452,7 @@ html {
     display:grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    width:90%;
+    width:85%;
   }
   .project1{
     width: 190px;
@@ -1490,7 +1490,7 @@ html {
         /* background-color: white; */
     }
     .highlight{
-     font-size: 27px;
+     font-size: 24px;
      /* background-color: #0f0; */
     }
 }
@@ -1498,7 +1498,7 @@ html {
 
 @media screen and (min-width: 375px) and (max-width: 415px) {
   .techSkills{
-    width: 90%;
+    width: 85%;
     /* background-color: red; */
     gap: 30px;
   }
@@ -1751,7 +1751,7 @@ html {
         /* background-color: white; */
     }
     .highlight{
-     font-size: 27px;
+     font-size: 24px;
      /* background-color: #0f0; */
     }
 }
@@ -2011,7 +2011,7 @@ html {
         /* background-color: white; */
     }
     .highlight{
-     font-size: 27px;
+     font-size: 24px;
      /* background-color: #0f0; */
     }
 }
