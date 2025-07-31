@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(black   ); /* or any gradient */
+    background-color: black; /* or any gradient */
     height: 100vh;
     width: 100%;
     display: flex;
@@ -781,6 +781,10 @@ html {
   color: var(--bright-text);
   padding: 4rem 2rem;
   text-align: center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
   font-family: 'Segoe UI', sans-serif;
 }
 
@@ -845,6 +849,9 @@ html {
 
 .emoji {
   animation: float 2s ease-in-out infinite;
+}
+.direct-contact{
+  margin:0 !important;
 }
 
 @keyframes float {
@@ -963,251 +970,16 @@ html {
 
 .navsshow{
   display: none;
+  align-items: center;
+  justify-content: center;
+
 }
 @media screen and (min-width:414px) and (max-width:800px){
-   #about{
-    margin-top: 25px;
-  }
-#homer{
-  margin-left: 6px;
-  font-size: 25px;
-  margin-top: 25px;
-}
- .hamburger {
-    display: inline-block;
-    font-size: 30px;
-    color: aqua;
-    cursor: pointer;
-    padding: 10px;
-    z-index: 1100;
-  }
-
-  .side-menu {
-    display: block;
-  }
-  #sc{
-    display: none;
-    width: 110px;
-    border-radius: 10px;
-    margin-top: 10px;
-    height: 20px;
-  }
-  #tog{
-    display: flex;
-    /* margin-left: 5px; */
-    width: 100px;
-    height: 100px;
-    /* bottom: 10px; */
-    position: absolute;
-    right: 0px;
-  }
-  #WithAqua{
-    display:  none;
-  }
-  .hamburger {
-  font-size: 2.5rem;
-  color: aqua;
-  cursor: pointer;
-  position: fixed;
-  top: 15px;
-  left: 0px;
-  z-index: 1001;
-}
-#hom{
-  font-size: 22px;
-}
-.seeh{
-  font-size: 35px;
-}
-#hams{
-  font-size: 49px;
-}
-/* Side Menu Panel */
-.side-menu {
-  position: fixed;
-  top: 0;
-  left: -100%;
-  height: 100vh;
-  width: 260px;
-  background-color: #0a0a0a;
-  color: white;
-  padding: 2rem 1.5rem;
-  box-shadow: 2px 0 10px rgba(0, 255, 255, 0.2);
-  transition: left 0.4s ease;
-  z-index: 1000;
-}
-
-.side-menu.active {
-  left: 0;
-}
-
-/* Close Button */
-.close-btn {
-  font-size: 2rem;
-  color: aqua;
-  cursor: pointer;
-  text-align: right;
-  display: block;
-  margin-bottom: 1rem;
-}
-
-/* Navigation item containers */
-.pAndImg {
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
-  margin-bottom: 1.5rem;
-  padding: 0.5rem;
-  border-radius: 8px;
-  transition: background 0.3s;
-}
-
-.pAndImg:hover {
-  background-color: rgba(0, 255, 255, 0.1);
-}
-
-/* Icons inside menu */
-.seer {
-  font-size: 25px;
-  color: aqua;
-}
-
-/* Text labels */
-.see {
-  font-size: 1rem;
-  color: white;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-/* Underlines */
-.underline,
-.line3,
-.line {
-  width: 100%;
-  height: 2px;
-  background-color: aqua;
-  margin-top: 0px;
-  opacity: 0.2;
-  transition: opacity 0.3s;
-}
-
-.pAndImg:hover .underline {
-  opacity: 1;
-}
-  .flip-card-back p{
-   display: none;
-  }
-  .navsshow{
-    display: flex;
-    /* background-color: #00bcd4; */
-    gap: 50px;
-    margin-left: 0px;
-  }
-  .navs{
-    display: none;
-  }
-  .thacoder {
-    display: none;
-  }
-  .pAndImg span{
-    font-size: 45px;
-  }
-  .seer:hover .see{
-    opacity: 1;
-  }
- 
-  .Header{
-    align-items: center;
-  }
-  .navsshow{
-    margin-left: 200px;
-  } 
-  .pAndImg p{
-    font-size: 15px;
-    color: aqua;
-    position: absolute;
-    bottom: -17px;
-    opacity: 1;    
-  }
-  .heroRight{
-    display: none;
-  }
-  .heroLeft{
-    width: 100%;
-  }
-  .heroLeft h1{
-   font-size: 43px;
-  }
-  .about-me p{
-    font-size: 22px;
-  }
-  .buttonsIcons{
-  }
-  .buttonsIconss{
-    width: 100%;
-  }
-  .about-me{
-    margin-top: -150px;
-  }
-  .flip-card{
-    width: 120px;
-    height:120px
-  }
-  .flip-card-front img{
-   width: 45px;
-   margin-bottom: -29px;
-  }
-  .flip-card-front h3{
-     font-size: 15px;
-     /* margin-top: 45px; */
-  }
-  .flip-card-inner{
-    grid-template-columns: 1fr 1fr;
-    display: grid;
-  }
-  .galleryPort{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-  .project1{
-    width: 190px;
-    height: 250px;
-    border-radius:0 ;
-  }
-  .aboutProject h2{
-    font-size: 17px;
-  }
-  .aboutProject{
+.techSkills{
+    width: 90%;
     /* background-color: red; */
-    margin-top: -33px;
+    gap: 30px;
   }
-  .languaages{
-    margin-top:-5px;
-    /* background-color: red; */
-    margin-left:5px;
-  }
-  .Hero{
-    /* margin-top: 0px; */
-  }
-  .lists{
-
-  }
-  .lists img{
-    width:20px;
-
-
-  }
-  .lists p{
-    font-size:15px;
-  }
-  .html{
-        margin-top: 0;
-        /* background-color: white; */
-    }
-}
-@media screen and (min-width: 375px) and (max-width: 415px) {
    .hamburger {
     display: inline-block;
     font-size: 30px;
@@ -1224,9 +996,9 @@ html {
     margin-top: 25px;
   }
 #homer{
-  margin-left: 59px;
+  /* margin-left: 59px; */
   font-size: 25px;
-  /* margin-top: 20px; */
+  /* margin-top: 10px; */
 }
   #sc{
     display: none;
@@ -1334,7 +1106,11 @@ html {
   opacity: 0.2;
   transition: opacity 0.3s;
 }
-
+#homer{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
 .pAndImg:hover .underline {
   opacity: 1;
 }
@@ -1344,8 +1120,10 @@ html {
   .navsshow{
     display: flex;
     /* background-color: #00bcd4; */
-    gap: 50px;
-    margin-left: 0px;
+    /* gap: 50px; */
+    /* margin-top: 50px; */
+    align-items:center;
+    justify-content: center;
   }
   .navs{
     display: none;
@@ -1364,7 +1142,7 @@ html {
     align-items: center;
   }
   .navsshow{
-    margin-left: 200px;
+    /* margin-left: 200px; */
   } 
   .pAndImg p{
     font-size: 15px;
@@ -1388,7 +1166,7 @@ html {
   .buttonsIcons{
   }
   .buttonsIconss{
-    width: 100%;
+    width: 90%;
   }
   .about-me{
     margin-top: -150px;
@@ -1413,6 +1191,7 @@ html {
     display:grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    width:90%;
   }
   .project1{
     width: 190px;
@@ -1449,254 +1228,19 @@ html {
         margin-top: 0;
         /* background-color: white; */
     }
+    .highlight{
+     font-size: 27px;
+     /* background-color: #0f0; */
+    }
 }
+
 
 @media screen and (min-width: 360px) and (max-width: 885px) {
-   .hamburger {
-    display: inline-block;
-    font-size: 30px;
-    color: aqua;
-    cursor: pointer;
-    padding: 10px;
-    z-index: 1100;
-  }
-
-  .side-menu {
-    display: block;
-  }
- #about{
-    margin-top: 25px;
-  }
-#homer{
-  margin-left: 59px;
-  font-size: 25px;
-  /* margin-top: 20px; */
-}
-  #sc{
-    display: none;
-    width: 110px;
-    border-radius: 10px;
-    margin-top: 10px;
-    height: 20px;
-  }
-  #tog{
-    display: flex;
-    /* margin-left: 5px; */
-    width: 100px;
-    height: 100px;
-    /* bottom: 10px; */
-    position: absolute;
-    right: 0px;
-  }
-  #WithAqua{
-    display:  none;
-  }
-  .hamburger {
-  font-size: 2.5rem;
-  color: aqua;
-  cursor: pointer;
-  position: fixed;
-  top: 15px;
-  left: 0px;
-  z-index: 1001;
-}
-#hom{
-  font-size: 22px;
-}
-.seeh{
-  font-size: 35px;
-}
-#hams{
-  font-size: 49px;
-}
-/* Side Menu Panel */
-.side-menu {
-  position: fixed;
-  top: 0;
-  left: -100%;
-  height: 100vh;
-  width: 260px;
-  background-color: #0a0a0a;
-  color: white;
-  padding: 2rem 1.5rem;
-  box-shadow: 2px 0 10px rgba(0, 255, 255, 0.2);
-  transition: left 0.4s ease;
-  z-index: 1000;
-}
-
-.side-menu.active {
-  left: 0;
-}
-
-/* Close Button */
-.close-btn {
-  font-size: 2rem;
-  color: aqua;
-  cursor: pointer;
-  text-align: right;
-  display: block;
-  margin-bottom: 1rem;
-}
-
-/* Navigation item containers */
-.pAndImg {
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
-  margin-bottom: 1.5rem;
-  padding: 0.5rem;
-  border-radius: 8px;
-  transition: background 0.3s;
-}
-
-.pAndImg:hover {
-  background-color: rgba(0, 255, 255, 0.1);
-}
-
-/* Icons inside menu */
-.seer {
-  font-size: 25px;
-  color: aqua;
-}
-
-/* Text labels */
-.see {
-  font-size: 1rem;
-  color: white;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-/* Underlines */
-.underline,
-.line3,
-.line {
-  width: 100%;
-  height: 2px;
-  background-color: aqua;
-  margin-top: 0px;
-  opacity: 0.2;
-  transition: opacity 0.3s;
-}
-
-.pAndImg:hover .underline {
-  opacity: 1;
-}
-  .flip-card-back p{
-   display: none;
-  }
-  .navsshow{
-    display: flex;
-    /* background-color: #00bcd4; */
-    gap: 50px;
-    margin-left: 0px;
-  }
-  .navs{
-    display: none;
-  }
-  .thacoder {
-    display: none;
-  }
-  .pAndImg span{
-    font-size: 45px;
-  }
-  .seer:hover .see{
-    opacity: 1;
-  }
- 
-  .Header{
-    align-items: center;
-  }
-  .navsshow{
-    margin-left: 200px;
-  } 
-  .pAndImg p{
-    font-size: 15px;
-    color: aqua;
-    position: absolute;
-    bottom: -17px;
-    opacity: 1;    
-  }
-  .heroRight{
-    display: none;
-  }
-  .heroLeft{
-    width: 100%;
-  }
-  .heroLeft h1{
-   font-size: 43px;
-  }
-  .about-me p{
-    font-size: 22px;
-  }
-  .buttonsIcons{
-  }
-  .buttonsIconss{
-    width: 100%;
-  }
-  .about-me{
-    margin-top: -150px;
-  }
-  .flip-card{
-    width: 120px;
-    height:120px
-  }
-  .flip-card-front img{
-   width: 45px;
-   margin-bottom: -29px;
-  }
-  .flip-card-front h3{
-     font-size: 15px;
-     /* margin-top: 45px; */
-  }
-  .flip-card-inner{
-    grid-template-columns: 1fr 1fr;
-    display: grid;
-  }
-  .galleryPort{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-  .project1{
-    width: 190px;
-    height: 250px;
-    border-radius:0 ;
-  }
-  .aboutProject h2{
-    font-size: 17px;
-  }
-  .aboutProject{
+.techSkills{
+    width: 90%;
     /* background-color: red; */
-    margin-top: -33px;
+    gap: 30px;
   }
-  .languaages{
-    margin-top:-5px;
-    /* background-color: red; */
-    margin-left:5px;
-  }
-  .Hero{
-    /* margin-top: 0px; */
-  }
-  .lists{
-
-  }
-  .lists img{
-    width:20px;
-
-
-  }
-  .lists p{
-    font-size:15px;
-  }
-  .html{
-        margin-top: 0;
-        /* background-color: white; */
-    }
-}
-
-
-@media screen and (min-width: 375px) and (max-width: 415px) {
    .hamburger {
     display: inline-block;
     font-size: 30px;
@@ -1713,9 +1257,9 @@ html {
     margin-top: 25px;
   }
 #homer{
-  margin-left: 59px;
+  /* margin-left: 59px; */
   font-size: 25px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
   #sc{
     display: none;
@@ -1823,7 +1367,11 @@ html {
   opacity: 0.2;
   transition: opacity 0.3s;
 }
-
+#homer{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
 .pAndImg:hover .underline {
   opacity: 1;
 }
@@ -1833,8 +1381,10 @@ html {
   .navsshow{
     display: flex;
     /* background-color: #00bcd4; */
-    gap: 50px;
-    margin-left: 0px;
+    /* gap: 50px; */
+    /* margin-top: 50px; */
+    align-items:center;
+    justify-content: center;
   }
   .navs{
     display: none;
@@ -1853,7 +1403,7 @@ html {
     align-items: center;
   }
   .navsshow{
-    margin-left: 200px;
+    /* margin-left: 200px; */
   } 
   .pAndImg p{
     font-size: 15px;
@@ -1877,7 +1427,7 @@ html {
   .buttonsIcons{
   }
   .buttonsIconss{
-    width: 100%;
+    width: 90%;
   }
   .about-me{
     margin-top: -150px;
@@ -1902,6 +1452,7 @@ html {
     display:grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    width:90%;
   }
   .project1{
     width: 190px;
@@ -1937,10 +1488,280 @@ html {
   .html{
         margin-top: 0;
         /* background-color: white; */
+    }
+    .highlight{
+     font-size: 27px;
+     /* background-color: #0f0; */
+    }
+}
+
+
+@media screen and (min-width: 375px) and (max-width: 415px) {
+  .techSkills{
+    width: 90%;
+    /* background-color: red; */
+    gap: 30px;
+  }
+   .hamburger {
+    display: inline-block;
+    font-size: 30px;
+    color: aqua;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1100;
+  }
+
+  .side-menu {
+    display: block;
+  }
+  #about{
+    margin-top: 25px;
+  }
+#homer{
+  /* margin-left: 59px; */
+  font-size: 25px;
+  /* margin-top: 10px; */
+}
+  #sc{
+    display: none;
+    width: 110px;
+    border-radius: 10px;
+    margin-top: 10px;
+    height: 20px;
+  }
+  #tog{
+    display: flex;
+    margin-left: 10px;
+    width: 100px;
+    height: 100px;
+    /* bottom: 10px; */
+    position: absolute;
+    /* right: 0px; */
+  }
+  #WithAqua{
+    display:  none;
+  }
+  .hamburger {
+  font-size: 2.5rem;
+  color: aqua;
+  cursor: pointer;
+  position: fixed;
+  top: 15px;
+  left: 0px;
+  z-index: 1001;
+}
+#hom{
+  font-size: 22px;
+}
+.seeh{
+  font-size: 35px;
+}
+#hams{
+  font-size: 49px;
+}
+/* Side Menu Panel */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 100vh;
+  width: 260px;
+  background-color: #0a0a0a;
+  color: white;
+  padding: 2rem 1.5rem;
+  box-shadow: 2px 0 10px rgba(0, 255, 255, 0.2);
+  transition: left 0.4s ease;
+  z-index: 1000;
+}
+
+.side-menu.active {
+  left: 0;
+}
+
+/* Close Button */
+.close-btn {
+  font-size: 2rem;
+  color: aqua;
+  cursor: pointer;
+  text-align: right;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+/* Navigation item containers */
+.pAndImg {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.pAndImg:hover {
+  background-color: rgba(0, 255, 255, 0.1);
+}
+
+/* Icons inside menu */
+.seer {
+  font-size: 25px;
+  color: aqua;
+}
+
+/* Text labels */
+.see {
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Underlines */
+.underline,
+.line3,
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: aqua;
+  margin-top: 0px;
+  opacity: 0.2;
+  transition: opacity 0.3s;
+}
+#homer{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.pAndImg:hover .underline {
+  opacity: 1;
+}
+  .flip-card-back p{
+   display: none;
+  }
+  .navsshow{
+    display: flex;
+    /* background-color: #00bcd4; */
+    /* gap: 50px; */
+    /* margin-top: 50px; */
+    align-items:center;
+    justify-content: center;
+  }
+  .navs{
+    display: none;
+  }
+  .thacoder {
+    display: none;
+  }
+  .pAndImg span{
+    font-size: 45px;
+  }
+  .seer:hover .see{
+    opacity: 1;
+  }
+ 
+  .Header{
+    align-items: center;
+  }
+  .navsshow{
+    /* margin-left: 200px; */
+  } 
+  .pAndImg p{
+    font-size: 15px;
+    color: aqua;
+    position: absolute;
+    bottom: -17px;
+    opacity: 1;    
+  }
+  .heroRight{
+    display: none;
+  }
+  .heroLeft{
+    width: 100%;
+  }
+  .heroLeft h1{
+   font-size: 43px;
+  }
+  .about-me p{
+    font-size: 22px;
+  }
+  .buttonsIcons{
+  }
+  .buttonsIconss{
+    width: 90%;
+  }
+  .about-me{
+    margin-top: -150px;
+  }
+  .flip-card{
+    width: 120px;
+    height:120px
+  }
+  .flip-card-front img{
+   width: 45px;
+   margin-bottom: -29px;
+  }
+  .flip-card-front h3{
+     font-size: 15px;
+     /* margin-top: 45px; */
+  }
+  .flip-card-inner{
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+  }
+  .galleryPort{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width:90%;
+  }
+  .project1{
+    width: 190px;
+    height: 250px;
+    border-radius:0 ;
+  }
+  .aboutProject h2{
+    font-size: 17px;
+  }
+  .aboutProject{
+    /* background-color: red; */
+    margin-top: -33px;
+  }
+  .languaages{
+    margin-top:-5px;
+    /* background-color: red; */
+    margin-left:5px;
+  }
+  .Hero{
+    /* margin-top: 0px; */
+  }
+  .lists{
+
+  }
+  .lists img{
+    width:20px;
+
+
+  }
+  .lists p{
+    font-size:15px;
+  }
+  .html{
+        margin-top: 0;
+        /* background-color: white; */
+    }
+    .highlight{
+     font-size: 27px;
+     /* background-color: #0f0; */
     }
 }
 
 @media screen and (min-width: 320px) and (max-width: 885px) {
+.techSkills{
+    width: 90%;
+    /* background-color: red; */
+    gap: 30px;
+  }
    .hamburger {
     display: inline-block;
     font-size: 30px;
@@ -1953,13 +1774,13 @@ html {
   .side-menu {
     display: block;
   }
- #about{
+  #about{
     margin-top: 25px;
   }
 #homer{
-  margin-left: 59px;
+  /* margin-left: 59px; */
   font-size: 25px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
   #sc{
     display: none;
@@ -1970,12 +1791,12 @@ html {
   }
   #tog{
     display: flex;
-    /* margin-left: 5px; */
+    margin-left: 10px;
     width: 100px;
     height: 100px;
     /* bottom: 10px; */
     position: absolute;
-    right: 0px;
+    /* right: 0px; */
   }
   #WithAqua{
     display:  none;
@@ -2067,7 +1888,11 @@ html {
   opacity: 0.2;
   transition: opacity 0.3s;
 }
-
+#homer{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
 .pAndImg:hover .underline {
   opacity: 1;
 }
@@ -2077,8 +1902,10 @@ html {
   .navsshow{
     display: flex;
     /* background-color: #00bcd4; */
-    gap: 50px;
-    margin-left: 0px;
+    /* gap: 50px; */
+    /* margin-top: 50px; */
+    align-items:center;
+    justify-content: center;
   }
   .navs{
     display: none;
@@ -2097,7 +1924,7 @@ html {
     align-items: center;
   }
   .navsshow{
-    margin-left: 200px;
+    /* margin-left: 200px; */
   } 
   .pAndImg p{
     font-size: 15px;
@@ -2121,7 +1948,7 @@ html {
   .buttonsIcons{
   }
   .buttonsIconss{
-    width: 100%;
+    width: 90%;
   }
   .about-me{
     margin-top: -150px;
@@ -2146,6 +1973,7 @@ html {
     display:grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    width:90%;
   }
   .project1{
     width: 190px;
@@ -2181,6 +2009,10 @@ html {
   .html{
         margin-top: 0;
         /* background-color: white; */
+    }
+    .highlight{
+     font-size: 27px;
+     /* background-color: #0f0; */
     }
 }
 .hamburger,
@@ -2196,7 +2028,8 @@ html {
   flex-direction: column;
   gap: 12px;
   padding: 20px;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
 }
 
 .direct-contact a {
