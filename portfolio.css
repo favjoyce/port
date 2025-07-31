@@ -976,7 +976,7 @@ html {
 }
 @media screen and (min-width:414px) and (max-width:800px){
   .typing{
-    font-size:22px;
+    font-size:15px;
   }
 .techSkills{
     width: 90%;
@@ -1240,7 +1240,7 @@ html {
 
 @media screen and (min-width: 360px) and (max-width: 885px) {
 .typing{
-    font-size:22px;
+    font-size:15px;
   }
   .techSkills{
     width: 90%;
@@ -1504,7 +1504,7 @@ html {
 
 @media screen and (min-width: 375px) and (max-width: 415px) {
  .typing{
-    font-size:22px;
+    font-size:15px;
   }
   .techSkills{
     width: 85%;
@@ -1767,7 +1767,7 @@ html {
 
 @media screen and (min-width: 320px) and (max-width: 885px) {
 .typing{
-    font-size:22px;
+    font-size:15px;
   }
   .techSkills{
     width: 90%;
