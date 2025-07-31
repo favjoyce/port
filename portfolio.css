@@ -15,7 +15,7 @@ body{
     height: 100vh;
 }
 body.light-mode{
-    background: linear-gradient(#f0fff0); /* or any gradient */
+    background-color:white; /* or any gradient */
     color: black;
 }
 *{
@@ -976,7 +976,7 @@ html {
 }
 @media screen and (min-width:414px) and (max-width:800px){
   .typing{
-    font-size:15px;
+    font-size:13px;
   }
 .techSkills{
     width: 90%;
@@ -1017,7 +1017,7 @@ html {
     height: 100px;
     /* bottom: 10px; */
     position: absolute;
-    /* right: 0px; */
+    right: 0px;
   }
   #WithAqua{
     display:  none;
@@ -1122,6 +1122,11 @@ html {
   }
   .navsshow{
     display: flex;
+    /* margin-left:59px; */
+    margin-left: 59px;
+    /* background-color: #00bcd4; */
+    /* gap: 50px; */
+    margin-top: 30px;
     /* background-color: #00bcd4; */
     /* gap: 50px; */
     /* margin-top: 50px; */
@@ -1240,7 +1245,7 @@ html {
 
 @media screen and (min-width: 360px) and (max-width: 885px) {
 .typing{
-    font-size:15px;
+    font-size:13px;
   }
   .techSkills{
     width: 90%;
@@ -1276,12 +1281,13 @@ html {
   }
   #tog{
     display: flex;
-    margin-left: 10px;
+    /* margin-left: 10px; */
+
     width: 100px;
     height: 100px;
     /* bottom: 10px; */
     position: absolute;
-    /* right: 0px; */
+    right: 0px;
   }
   #WithAqua{
     display:  none;
@@ -1386,9 +1392,10 @@ html {
   }
   .navsshow{
     display: flex;
+    margin-left: 59px;
     /* background-color: #00bcd4; */
     /* gap: 50px; */
-    /* margin-top: 50px; */
+    margin-top: 30px;
     align-items:center;
     justify-content: center;
   }
@@ -1504,7 +1511,7 @@ html {
 
 @media screen and (min-width: 375px) and (max-width: 415px) {
  .typing{
-    font-size:15px;
+    font-size:13px;
   }
   .techSkills{
     width: 85%;
@@ -1545,7 +1552,7 @@ html {
     height: 100px;
     /* bottom: 10px; */
     position: absolute;
-    /* right: 0px; */
+    right: 0px;
   }
   #WithAqua{
     display:  none;
@@ -1653,6 +1660,10 @@ html {
     /* background-color: #00bcd4; */
     /* gap: 50px; */
     /* margin-top: 50px; */
+    margin-left: 59px;
+    /* background-color: #00bcd4; */
+    /* gap: 50px; */
+    margin-top: 30px;
     align-items:center;
     justify-content: center;
   }
@@ -1767,7 +1778,7 @@ html {
 
 @media screen and (min-width: 320px) and (max-width: 885px) {
 .typing{
-    font-size:15px;
+    font-size:13px;
   }
   .techSkills{
     width: 90%;
@@ -1808,7 +1819,7 @@ html {
     height: 100px;
     /* bottom: 10px; */
     position: absolute;
-    /* right: 0px; */
+    right: 0px;
   }
   #WithAqua{
     display:  none;
@@ -1912,6 +1923,10 @@ html {
    display: none;
   }
   .navsshow{
+    margin-left: 59px;
+    /* background-color: #00bcd4; */
+    /* gap: 50px; */
+    margin-top: 30px;
     display: flex;
     /* background-color: #00bcd4; */
     /* gap: 50px; */
