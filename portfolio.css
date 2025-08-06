@@ -1,10 +1,7 @@
 body{
     background-color: black; /* or any gradient */
     height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100%;    
     color: white;
     flex-direction: column;
 
@@ -15,7 +12,7 @@ body{
     height: 100vh;
 }
 body.light-mode{
-    background-color:white; /* or any gradient */
+    background-color:	white; /* or any gradient */
     color: black;
 }
 *{
@@ -29,11 +26,21 @@ body.light-mode{
 
 .GeneralDiv{
 }
+.headerWrap{
+  width: 95%;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
 .Header{
-  width: 90%;
+  width: 100%;
     height: 90px;
+    top: 0;
     background-color: transparent;
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
     position: fixed;
     z-index: 10000;
@@ -207,10 +214,20 @@ align-items: center;
 }
 .Hero{
     width: 100%;
-    height: 590px;
+    /* height: 590px; */
     /* background-color: white; */
     margin-top: 150px;
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heroWrap{
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+    justify-content: center;
+    /* background-color: red; */
 }
 .heroLeft{
     width: 60%;
@@ -286,7 +303,7 @@ align-items: center;
    /* border: none; */
    background-color: transparent;
    border: 2.5px solid aqua;
-   color: aqua;
+   color: inherit;
    
 }
 .Tiktok.show {
@@ -307,7 +324,7 @@ align-items: center;
 }
 .buttonsIcons a{
     text-decoration: none;
-    color: aqua;
+    color: inherit;
 }
 .Tiktok {
   opacity: 0;
@@ -372,6 +389,18 @@ align-items: center;
     width: 100%;
     /* height: 599px; */
     /* background-color: blue; */
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column; */
+  margin-top: 70px;
+}
+.aboutWrap{
+  width: 95%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: column;
 }
 .aboutMeText h1{
     font-size: 34px;
@@ -421,8 +450,8 @@ align-items: center;
     .flip-card-front,
     .flip-card-back {
       position: absolute;
-      width: 100%;
-      height: 100%;
+      width: 90%;
+      height: 90%;
       backface-visibility: hidden;
       border-radius: 12px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -491,8 +520,8 @@ align-items: center;
 }
 .back-text{
   color: aqua;
-  font-size: 15px;
-  line-height: 27px;
+  font-size: 13px;
+  line-height: 20px;
   text-align: start;
   /* background-color: #00bcd4; */
   width: 85%;
@@ -633,6 +662,16 @@ align-items: center;
 .gpGeneral{
   width: 100%;
   margin-top: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.galleryWrap{
+  width: 95%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: column;
 }
 .project1{
   width: 90%;
@@ -685,6 +724,7 @@ align-items: center;
 }
 .gpText{
   margin-bottom: 50px;
+  
 }
 .cloned{
   font-weight: 800;
@@ -692,7 +732,7 @@ align-items: center;
 .thacGallery{
   font-weight: 850;
   margin-bottom: 50px;
-  color: aqua;
+  color: white;
   font-size: 45px;
 }
 .aboutProject{
@@ -705,12 +745,12 @@ align-items: center;
    margin-left: 20px;
    font-weight: 570;
    margin-top: 30px;
-   font-size: 23px;
+   font-size: 20px;
 }
 .languaages{
   margin-left: 40px;
   /* background-color: #00c3ff; */
-  color: aqua;
+  color: white;
   margin-top: 15px;
 }
 .languaages img{
@@ -719,7 +759,7 @@ align-items: center;
 .list{
 display: flex;
 gap: 10px;
-color: aqua;
+color: white;
 margin-top: 10px;
 align-items: center;
 }
@@ -730,6 +770,8 @@ align-items: center;
 }
 .viewUtiv{
   text-decoration: none;
+  color: white;
+  font-size: 20px;
 }
 
 .vU:hover{
@@ -751,8 +793,8 @@ align-items: center;
   color: inherit;
   margin-top: 70px;
   font-size: 15px;
-  color: #00c3ff;
-  text-decoration: underline;
+  color: inherit;
+  text-decoration: none;
 }
 .buttonsIcons{
   margin-top: 0;
@@ -918,7 +960,6 @@ html {
 .show{
   display: none;
 }
-/* ========== TABLETS ========== */
 @media (max-width: 1024px) {
    .hamburger {
     display: inline-block;
@@ -974,9 +1015,15 @@ html {
   justify-content: center;
 
 }
-@media screen and (min-width:414px) and (max-width:800px){
+@media screen and (max-width:850px){
+  .thacoder{
+    display:none !important;
+  }
   .typing{
     font-size:13px;
+  }
+  .tech-section h2 {
+    font-size:15px !important;
   }
 .techSkills{
     width: 90%;
@@ -1046,7 +1093,7 @@ html {
   top: 0;
   left: -100%;
   height: 100vh;
-  width: 260px;
+  width: 170px;
   background-color: #0a0a0a;
   color: white;
   padding: 2rem 1.5rem;
@@ -1067,17 +1114,25 @@ html {
   text-align: right;
   display: block;
   margin-bottom: 1rem;
+  z-index: 2000;
 }
-
+.headerWrap{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
 /* Navigation item containers */
 .pAndImg {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   gap: 0.7rem;
   margin-bottom: 1.5rem;
-  padding: 0.5rem;
+  padding: 0.1rem;
   border-radius: 8px;
   transition: background 0.3s;
+  /* justify-content: center; */
+  /* height: 100%; */
+  /* background-color: red; */
 }
 
 .pAndImg:hover {
@@ -1123,7 +1178,7 @@ html {
   .navsshow{
     display: flex;
     /* margin-left:59px; */
-    margin-left: 59px;
+    /* margin-left: 59px; */
     /* background-color: #00bcd4; */
     /* gap: 50px; */
     margin-top: 30px;
@@ -1177,7 +1232,7 @@ html {
     width: 90%;
   }
   .about-me{
-    margin-top: -150px;
+    /* margin-top: -150px; */
   }
   .flip-card{
     width: 120px;
@@ -1240,814 +1295,159 @@ html {
      font-size: 22px;
      /* background-color: #0f0; */
     }
+    #hams{
+  display: block !important;
+}
+.hamburger.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.techSkills{
+  gap: 10px;
+}
 }
 
 
-@media screen and (min-width: 360px) and (max-width: 885px) {
-.typing{
-    font-size:13px;
-  }
-  .techSkills{
-    width: 90%;
-    /* background-color: red; */
-    gap: 30px;
-  }
-   .hamburger {
-    display: inline-block;
-    font-size: 30px;
-    color: aqua;
-    cursor: pointer;
-    padding: 10px;
-    z-index: 1100;
-  }
-
-  .side-menu {
-    display: block;
-  }
-  #about{
-    margin-top: 25px;
-  }
-#homer{
-  /* margin-left: 59px; */
-  font-size: 25px;
-  /* margin-top: 10px; */
-}
-  #sc{
-    display: none;
-    width: 110px;
-    border-radius: 10px;
-    margin-top: 10px;
-    height: 20px;
-  }
-  #tog{
-    display: flex;
-    /* margin-left: 10px; */
-
-    width: 100px;
-    height: 100px;
-    /* bottom: 10px; */
-    position: absolute;
-    right: 0px;
-  }
-  #WithAqua{
-    display:  none;
-  }
-  .hamburger {
-  font-size: 2.5rem;
-  color: aqua;
-  cursor: pointer;
-  position: fixed;
-  top: 15px;
-  left: 0px;
-  z-index: 1001;
-}
-#hom{
-  font-size: 22px;
-}
-.seeh{
-  font-size: 35px;
-}
-#hams{
-  font-size: 49px;
-}
-/* Side Menu Panel */
-.side-menu {
-  position: fixed;
-  top: 0;
-  left: -100%;
-  height: 100vh;
-  width: 260px;
-  background-color: #0a0a0a;
-  color: white;
-  padding: 2rem 1.5rem;
-  box-shadow: 2px 0 10px rgba(0, 255, 255, 0.2);
-  transition: left 0.4s ease;
-  z-index: 1000;
+.tech-section {
+  padding: 4rem 2rem;
+  text-align: center;
 }
 
-.side-menu.active {
-  left: 0;
-}
-
-/* Close Button */
-.close-btn {
+.typewriter {
+  display: flex !important;
   font-size: 2rem;
-  color: aqua;
+  width: fit-content;
+  margin: 0 auto 3rem;
+  overflow: hidden;
+  border-right: .15em solid var(--accent);
+  white-space: nowrap;
+  animation: typing 3s steps(30, end), blink .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+.stack-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.stack-box {
+  background: rgba(255,255,255,0.02);
+  border-left: 4px solid transparent;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  width: 250px;
+  text-align: left;
+  transition: all 0.3s ease;
+  position: relative;
+  color: inherit;
   cursor: pointer;
-  text-align: right;
-  display: block;
+
+}
+
+/* .stack-box:hover {
+  border-left: 4px solid var(--accent);
+  box-shadow: 0 0 20px var(--accent);
+  transform: translateY(-5px); */
+  .stack-box:hover {
+  border-color: var(--aqua);
+  box-shadow: 
+    0 0 5px var(--aqua),
+    0 0 8px var(--aqua),
+    0 0 10px var(--aqua);
+  transform: translateY(-6px) scale(1.02);
+}
+
+
+
+.stack-box .icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  color: var(--accent);
+}
+
+.stack-box h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: inherit;
+}
+
+.stack-info {
+  font-size: 0.95rem;
+  opacity: 0.85;
+  line-height: 1.5;
+}
+.tech-section {
+  padding: 2rem;
+  /* background-color: #202C2C; */
+  color: inherit;
+  text-align: center;
+}
+.tech-section .typewriter {
+  font-size: 2rem;
+  font-weight: bold;
   margin-bottom: 1rem;
 }
-
-/* Navigation item containers */
-.pAndImg {
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
-  margin-bottom: 1.5rem;
-  padding: 0.5rem;
-  border-radius: 8px;
-  transition: background 0.3s;
+.intro-text {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-inline: auto;
+  line-height: 1.6;
 }
-
-.pAndImg:hover {
-  background-color: rgba(0, 255, 255, 0.1);
-}
-
-/* Icons inside menu */
-.seer {
-  font-size: 25px;
+.stack-info strong{
   color: aqua;
 }
-
-/* Text labels */
-.see {
-  font-size: 1rem;
-  color: white;
-  font-weight: bold;
-  letter-spacing: 1px;
+.findme h2{
+  color: inherit !important;
+  text-decoration: none;
 }
-
-/* Underlines */
-.underline,
-.line3,
-.line {
-  width: 100%;
-  height: 2px;
-  background-color: aqua;
-  margin-top: 0px;
-  opacity: 0.2;
-  transition: opacity 0.3s;
-}
-#homer{
-  display:flex;
-  align-items: center;
+.stack-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
   justify-content: center;
 }
-.pAndImg:hover .underline {
-  opacity: 1;
+.stack-box {
+  /* background: #fff; */
+  padding: 1.5rem;
+  border-radius: 12px;
+  color: inherit;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
 }
-  .flip-card-back p{
-   display: none;
-  }
-  .navsshow{
-    display: flex;
-    margin-left: 59px;
-    /* background-color: #00bcd4; */
-    /* gap: 50px; */
-    margin-top: 30px;
-    align-items:center;
-    justify-content: center;
-  }
-  .navs{
-    display: none;
-  }
-  .thacoder {
-    display: none;
-  }
-  .pAndImg span{
-    font-size: 45px;
-  }
-  .seer:hover .see{
-    opacity: 1;
-  }
- 
-  .Header{
-    align-items: center;
-  }
-  .navsshow{
-    /* margin-left: 200px; */
-  } 
-  .pAndImg p{
-    font-size: 15px;
-    color: aqua;
-    position: absolute;
-    bottom: -17px;
-    opacity: 1;    
-  }
-  .heroRight{
-    display: none;
-  }
-  .heroLeft{
-    width: 100%;
-  }
-  .heroLeft h1{
-   font-size: 43px;
-  }
-  .about-me p{
-    font-size: 22px;
-  }
-  .buttonsIcons{
-  }
-  .buttonsIconss{
-    width: 90%;
-  }
-  .about-me{
-    margin-top: -150px;
-  }
-  .flip-card{
-    width: 120px;
-    height:120px
-  }
-  .flip-card-front img{
-   width: 45px;
-   margin-bottom: -29px;
-  }
-  .flip-card-front h3{
-     font-size: 15px;
-     /* margin-top: 45px; */
-  }
-  .flip-card-inner{
-    grid-template-columns: 1fr 1fr;
-    display: grid;
-  }
-  .galleryPort{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    width:85%;
-  }
-  .project1{
-    width: 190px;
-    height: 250px;
-    border-radius:0 ;
-  }
-  .aboutProject h2{
-    font-size: 17px;
-  }
-  .aboutProject{
-    /* background-color: red; */
-    margin-top: -33px;
-  }
-  .languaages{
-    margin-top:-5px;
-    /* background-color: red; */
-    margin-left:5px;
-  }
-  .Hero{
-    /* margin-top: 0px; */
-  }
-  .lists{
-
-  }
-  .lists img{
-    width:20px;
-
-
-  }
-  .lists p{
-    font-size:15px;
-  }
-  .html{
-        margin-top: 0;
-        /* background-color: white; */
-    }
-    .highlight{
-     font-size: 22px;
-     /* background-color: #0f0; */
-    }
+.stack-box:hover {
+  transform: translateY(-5px);
 }
-
-
-@media screen and (min-width: 375px) and (max-width: 415px) {
- .typing{
-    font-size:13px;
-  }
-  .techSkills{
-    width: 85%;
-    /* background-color: red; */
-    gap: 30px;
-  }
-   .hamburger {
-    display: inline-block;
-    font-size: 30px;
-    color: aqua;
-    cursor: pointer;
-    padding: 10px;
-    z-index: 1100;
-  }
-
-  .side-menu {
-    display: block;
-  }
-  #about{
-    margin-top: 25px;
-  }
-#homer{
-  /* margin-left: 59px; */
-  font-size: 25px;
-  /* margin-top: 10px; */
-}
-  #sc{
-    display: none;
-    width: 110px;
-    border-radius: 10px;
-    margin-top: 10px;
-    height: 20px;
-  }
-  #tog{
-    display: flex;
-    margin-left: 10px;
-    width: 100px;
-    height: 100px;
-    /* bottom: 10px; */
-    position: absolute;
-    right: 0px;
-  }
-  #WithAqua{
-    display:  none;
-  }
-  .hamburger {
-  font-size: 2.5rem;
-  color: aqua;
-  cursor: pointer;
-  position: fixed;
-  top: 15px;
-  left: 0px;
-  z-index: 1001;
-}
-#hom{
-  font-size: 22px;
-}
-.seeh{
-  font-size: 35px;
-}
-#hams{
-  font-size: 49px;
-}
-/* Side Menu Panel */
-.side-menu {
-  position: fixed;
-  top: 0;
-  left: -100%;
-  height: 100vh;
-  width: 260px;
-  background-color: #0a0a0a;
-  color: white;
-  padding: 2rem 1.5rem;
-  box-shadow: 2px 0 10px rgba(0, 255, 255, 0.2);
-  transition: left 0.4s ease;
-  z-index: 1000;
-}
-
-.side-menu.active {
-  left: 0;
-}
-
-/* Close Button */
-.close-btn {
+.icon {
   font-size: 2rem;
-  color: aqua;
-  cursor: pointer;
-  text-align: right;
-  display: block;
-  margin-bottom: 1rem;
+}
+.stack-info {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-top: 0.5rem;
 }
 
-/* Navigation item containers */
-.pAndImg {
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
-  margin-bottom: 1.5rem;
-  padding: 0.5rem;
-  border-radius: 8px;
-  transition: background 0.3s;
-}
-
-.pAndImg:hover {
-  background-color: rgba(0, 255, 255, 0.1);
-}
-
-/* Icons inside menu */
-.seer {
-  font-size: 25px;
-  color: aqua;
-}
-
-/* Text labels */
-.see {
-  font-size: 1rem;
-  color: white;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-/* Underlines */
-.underline,
-.line3,
-.line {
-  width: 100%;
-  height: 2px;
-  background-color: aqua;
-  margin-top: 0px;
-  opacity: 0.2;
-  transition: opacity 0.3s;
-}
-#homer{
-  display:flex;
-  align-items: center;
-  justify-content: center;
-}
-.pAndImg:hover .underline {
-  opacity: 1;
-}
-  .flip-card-back p{
-   display: none;
-  }
-  .navsshow{
-    display: flex;
-    /* background-color: #00bcd4; */
-    /* gap: 50px; */
-    /* margin-top: 50px; */
-    margin-left: 59px;
-    /* background-color: #00bcd4; */
-    /* gap: 50px; */
-    margin-top: 30px;
-    align-items:center;
-    justify-content: center;
-  }
-  .navs{
-    display: none;
-  }
-  .thacoder {
-    display: none;
-  }
-  .pAndImg span{
-    font-size: 45px;
-  }
-  .seer:hover .see{
-    opacity: 1;
-  }
- 
-  .Header{
-    align-items: center;
-  }
-  .navsshow{
-    /* margin-left: 200px; */
-  } 
-  .pAndImg p{
-    font-size: 15px;
-    color: aqua;
-    position: absolute;
-    bottom: -17px;
-    opacity: 1;    
-  }
-  .heroRight{
-    display: none;
-  }
-  .heroLeft{
-    width: 100%;
-  }
-  .heroLeft h1{
-   font-size: 43px;
-  }
-  .about-me p{
-    font-size: 22px;
-  }
-  .buttonsIcons{
-  }
-  .buttonsIconss{
-    width: 90%;
-  }
-  .about-me{
-    margin-top: -150px;
-  }
-  .flip-card{
-    width: 120px;
-    height:120px
-  }
-  .flip-card-front img{
-   width: 45px;
-   margin-bottom: -29px;
-  }
-  .flip-card-front h3{
-     font-size: 15px;
-     /* margin-top: 45px; */
-  }
-  .flip-card-inner{
-    grid-template-columns: 1fr 1fr;
-    display: grid;
-  }
-  .galleryPort{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    width:90%;
-  }
-  .project1{
-    width: 190px;
-    height: 250px;
-    border-radius:0 ;
-  }
-  .aboutProject h2{
-    font-size: 17px;
-  }
-  .aboutProject{
-    /* background-color: red; */
-    margin-top: -33px;
-  }
-  .languaages{
-    margin-top:-5px;
-    /* background-color: red; */
-    margin-left:5px;
-  }
-  .Hero{
-    /* margin-top: 0px; */
-  }
-  .lists{
-
-  }
-  .lists img{
-    width:20px;
-
-
-  }
-  .lists p{
-    font-size:15px;
-  }
-  .html{
-        margin-top: 0;
-        /* background-color: white; */
-    }
-    .highlight{
-     font-size: 22px;
-     /* background-color: #0f0; */
-    }
-}
-
-@media screen and (min-width: 320px) and (max-width: 885px) {
-.typing{
-    font-size:13px;
-  }
-  .techSkills{
-    width: 90%;
-    /* background-color: red; */
-    gap: 30px;
-  }
-   .hamburger {
-    display: inline-block;
-    font-size: 30px;
-    color: aqua;
-    cursor: pointer;
-    padding: 10px;
-    z-index: 1100;
-  }
-
-  .side-menu {
-    display: block;
-  }
-  #about{
-    margin-top: 25px;
-  }
-#homer{
-  /* margin-left: 59px; */
-  font-size: 25px;
-  /* margin-top: 10px; */
-}
-  #sc{
-    display: none;
-    width: 110px;
-    border-radius: 10px;
-    margin-top: 10px;
-    height: 20px;
-  }
-  #tog{
-    display: flex;
-    margin-left: 10px;
-    width: 100px;
-    height: 100px;
-    /* bottom: 10px; */
-    position: absolute;
-    right: 0px;
-  }
-  #WithAqua{
-    display:  none;
-  }
-  .hamburger {
-  font-size: 2.5rem;
-  color: aqua;
-  cursor: pointer;
-  position: fixed;
-  top: 15px;
-  left: 0px;
-  z-index: 1001;
-}
-#hom{
-  font-size: 22px;
-}
-.seeh{
-  font-size: 35px;
-}
-#hams{
-  font-size: 49px;
-}
-/* Side Menu Panel */
-.side-menu {
-  position: fixed;
-  top: 0;
-  left: -100%;
-  height: 100vh;
-  width: 260px;
-  background-color: #0a0a0a;
-  color: white;
-  padding: 2rem 1.5rem;
-  box-shadow: 2px 0 10px rgba(0, 255, 255, 0.2);
-  transition: left 0.4s ease;
-  z-index: 1000;
-}
-
-.side-menu.active {
-  left: 0;
-}
-
-/* Close Button */
-.close-btn {
-  font-size: 2rem;
-  color: aqua;
-  cursor: pointer;
-  text-align: right;
-  display: block;
-  margin-bottom: 1rem;
-}
-
-/* Navigation item containers */
-.pAndImg {
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
-  margin-bottom: 1.5rem;
-  padding: 0.5rem;
-  border-radius: 8px;
-  transition: background 0.3s;
-}
-
-.pAndImg:hover {
-  background-color: rgba(0, 255, 255, 0.1);
-}
-
-/* Icons inside menu */
-.seer {
-  font-size: 25px;
-  color: aqua;
-}
-
-/* Text labels */
-.see {
-  font-size: 1rem;
-  color: white;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-/* Underlines */
-.underline,
-.line3,
-.line {
-  width: 100%;
-  height: 2px;
-  background-color: aqua;
-  margin-top: 0px;
-  opacity: 0.2;
-  transition: opacity 0.3s;
-}
-#homer{
-  display:flex;
-  align-items: center;
-  justify-content: center;
-}
-.pAndImg:hover .underline {
-  opacity: 1;
-}
-  .flip-card-back p{
-   display: none;
-  }
-  .navsshow{
-    margin-left: 59px;
-    /* background-color: #00bcd4; */
-    /* gap: 50px; */
-    margin-top: 30px;
-    display: flex;
-    /* background-color: #00bcd4; */
-    /* gap: 50px; */
-    /* margin-top: 50px; */
-    align-items:center;
-    justify-content: center;
-  }
-  .navs{
-    display: none;
-  }
-  .thacoder {
-    display: none;
-  }
-  .pAndImg span{
-    font-size: 45px;
-  }
-  .seer:hover .see{
-    opacity: 1;
-  }
- 
-  .Header{
-    align-items: center;
-  }
-  .navsshow{
-    /* margin-left: 200px; */
-  } 
-  .pAndImg p{
-    font-size: 15px;
-    color: aqua;
-    position: absolute;
-    bottom: -17px;
-    opacity: 1;    
-  }
-  .heroRight{
-    display: none;
-  }
-  .heroLeft{
-    width: 100%;
-  }
-  .heroLeft h1{
-   font-size: 43px;
-  }
-  .about-me p{
-    font-size: 22px;
-  }
-  .buttonsIcons{
-  }
-  .buttonsIconss{
-    width: 90%;
-  }
-  .about-me{
-    margin-top: -150px;
-  }
-  .flip-card{
-    width: 120px;
-    height:120px
-  }
-  .flip-card-front img{
-   width: 45px;
-   margin-bottom: -29px;
-  }
-  .flip-card-front h3{
-     font-size: 15px;
-     /* margin-top: 45px; */
-  }
-  .flip-card-inner{
-    grid-template-columns: 1fr 1fr;
-    display: grid;
-  }
-  .galleryPort{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    width:90%;
-  }
-  .project1{
-    width: 190px;
-    height: 250px;
-    border-radius:0 ;
-  }
-  .aboutProject h2{
-    font-size: 17px;
-  }
-  .aboutProject{
-    /* background-color: red; */
-    margin-top: -33px;
-  }
-  .languaages{
-    margin-top:-5px;
-    /* background-color: red; */
-    margin-left:5px;
-  }
-  .Hero{
-    /* margin-top: 0px; */
-  }
-  .lists{
-
-  }
-  .lists img{
-    width:20px;
-
-
-  }
-  .lists p{
-    font-size:15px;
-  }
-  .html{
-        margin-top: 0;
-        /* background-color: white; */
-    }
-    .highlight{
-     font-size: 22px;
-     /* background-color: #0f0; */
-    }
-}
 .hamburger,
 .close-icon {
   display: none;
   cursor: pointer;
   font-size: 28px;
   padding: 8px;
+}
+#hams{
+  display: none;
 }
 
 .direct-contact {

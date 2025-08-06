@@ -13,10 +13,11 @@
 
 </head>
 <body>
-    <div class="general">
+    <!-- <div class="general"> -->
     <div class="Header">
-       <div class="thacoder">
-        <h1 style="font-weight: 700; text-shadow: 0 0 5px aqua, 0 0 10px aqua, 0 0 15px aqua;"> <strong>Thacoder</strong></h1>
+      <div class="headerWrap">
+       <div class="thacoder" style="display: flex;align-items: center;justify-content: center;">
+        <h1 style="font-weight: 700; text-shadow: 0 0 2px aqua, 0 0 10px aqua, 0 0 15px aqua; font-size: 20px;"> <strong> Thacoder/></strong></h1>
        </div>
 
        <div class="navs">
@@ -95,10 +96,10 @@ dark_mode
         </div>
        </div>
 
-       <span class="hamburger material-symbols-outlined ham" id="hams" onclick="toggleMenu()">menu</span>
+       <span class="hamburger material-symbols-outlined ham" id="hams" onclick="toggleMenus()">menu</span>
 
        <div class="side-menu" id="sideMenu">
-  <span class="close-btn material-symbols-outlined" onclick="toggleMenu()" style="margin-top: -20px; font-size: 40px;">close</span>
+  <span class="close-btn material-symbols-outlined" onclick="toggleMenus()" style="margin-top: -20px; font-size: 40px;">close</span>
 
      <div class="pAndImg">
          <a class="home" href="#home"><span class="material-symbols-outlined seer">home</span> </a>
@@ -127,7 +128,13 @@ dark_mode
 
     </div>
 
+</div>
+
+
+
+
     <div class="Hero" id="home">
+      <div class="heroWrap">
       <div class="heroLeft">
         <h3>Hello,my name is</h3>
         <h1>Anyia <span class="joyce">Joyce</span> </h1>
@@ -142,18 +149,11 @@ dark_mode
 </a>
          
           <div class="findme">
-          <h2>Find Me Online</h2>
+          <h2 >Find Me Online</h2>
          </div>
          <div class="buttonsIcons">
 
-            <div class="buttonsIconss">
-            <button id="githubBtn">
-               <a href="https://www.tiktok.com/@thacoder1" target="_blank" rel="noopener noreferrer"> <i class="ri-tiktok-line"></i></a>
-            </button>
-            
-            <div class="Tiktok"><p>Tiktok</p></div>
-            </div>
-
+           
             <div class="buttonsIconss">
             <button>
               <a href=" http://linkedin.com/in/anyia-favour-803842313" target="_blank" rel="noopener noreferrer"><i class="ri-linkedin-fill"></i></a>
@@ -196,8 +196,11 @@ dark_mode
       
     </div>
 
-    <div class="aboutMe" id="about">
+</div>
 
+
+    <div class="aboutMe" id="about">
+   <div class="aboutWrap">
 <div class="about-me">
   <h2>About Me</h2>
   
@@ -221,8 +224,40 @@ dark_mode
 </div>
 
 
+<section class="tech-section">
+  <h2 class="typewriter">🛠 Tech Stack That Powers My Projects</h2>
+  <p class="intro-text">
+    I craft modern web and mobile applications for  businesses and personal brands — combining aesthetic user interfaces with scalable back-end systems. As a developer, I bring <Strong>clarity, speed, and function</Strong> to every project I touch.
+  </p>
+
+  <div class="stack-container">
+    <div class="stack-box">
+      <span class="icon">💻🌐</span>
+      <h3>Frontend Development</h3>
+      <p class="stack-info">
+        I specialize in building responsive and interactive user interfaces using <strong>React.js</strong>,<strong>React Native</strong>, <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>. Focused on clean design, accessibility, and performance across devices.
+      </p>
+    </div>
+    <div class="stack-box">
+      <span class="icon">⚙️🛠️</span>
+      <h3>Backend Development</h3>
+      <p class="stack-info">
+        I build reliable APIs and server-side logic using <strong>JAVA</strong>,<strong>Node.js</strong> and <strong>Spring Boot</strong>. My code is secure, efficient, and structured to scale as your project grows.
+      </p>
+    </div>
+    <div class="stack-box">
+      <span class="icon">💾🗄️</span>
+      <h3>Database Management</h3>
+      <p class="stack-info">
+        I manage and integrate databases like <strong>MongoDB</strong> and <strong>MySQL</strong> — ensuring your data is well-structured, accessible, and safely stored.
+      </p>
+    </div>
+  </div>
+</section>
+
+
 <div class="aboutMeText">
-  <h1 id="typewriter" class="typing"></h1>
+  <h1 id="typewriter" class="typing">These are My Current Tech Skills</h1>
 </div>
 
 
@@ -479,9 +514,10 @@ Learning in progress
 
       </div>
     </div>
+    </div>
 
     <div class="gpGeneral" id="gallery" >
-
+ <div class="galleryWrap">
       <div class="gpText">
        <h2 class="thacGallery">ThaCoder's Gallery</h2>
 
@@ -827,6 +863,11 @@ Learning in progress
          </div>
        </div>
 
+       
+       </div>
+
+
+
        </div>
     </div>
 
@@ -843,7 +884,7 @@ Learning in progress
   <textarea name="message" rows="5" placeholder="Project Details / Message" required></textarea>
 
   <!-- Optional: redirect to a thank-you page -->
-  <!-- <input type="hidden" name="_next" value="thank-you.html" /> -->
+  <input type="hidden" name="_next" value="thank-you.html" />
   
   <!-- Optional: disable FormSubmit CAPTCHA -->
   <input type="hidden" name="_captcha" value="false" />
@@ -856,7 +897,7 @@ Learning in progress
 </form>
 
 
-  <div class="divider">— or reach out directly —</div>
+  <div class="divider"> or reach out directly </div>
 
 <div class="direct-contact">
   <a href="mailto:anyiafavour15@gmail.com">
@@ -876,7 +917,7 @@ Learning in progress
     </div>
 
     
-    </div>
+    <!-- </div> -->
 </body>
 <script src="portfolio.js" >
 </script>

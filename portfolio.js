@@ -46,6 +46,21 @@ function toggleMenu() {
     sideMenu.classList.toggle('active');
   }
 
+  function toggleMenus() {
+  const sideMenu = document.getElementById("sideMenu");
+  const hamburger = document.getElementById("hams");
+
+  sideMenu.classList.toggle("active");
+
+  if (sideMenu.classList.contains("active")) {
+  hamburger.classList.add("hidden");
+} else {
+  hamburger.classList.remove("hidden");
+}
+
+}
+
+
   const roles = [
     "Full_stack Developer",
     "Software Engineer",
@@ -134,7 +149,6 @@ function toggleMenu() {
       }, pauseTime);
     }
   }
-
   // Start on load
   window.onload = typeWriter;
 
