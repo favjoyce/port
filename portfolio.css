@@ -1025,10 +1025,20 @@ html {
   .tech-section h2 {
     font-size:15px !important;
   }
+  .aboutProject h2{
+    font-size: 13px !important;
+  }
+ .aboutProject p{
+    font-size: 13px !important;
+  }
+ 
 .techSkills{
     width: 90%;
     /* background-color: red; */
-    gap: 30px;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
   }
    .hamburger {
     display: inline-block;
