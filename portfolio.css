@@ -4,7 +4,7 @@ body{
     width: 100%;    
     color: white;
     flex-direction: column;
-
+    overflow-x: hidden;
 
 }
 .general{
@@ -1375,6 +1375,7 @@ html {
     0 0 8px var(--aqua),
     0 0 10px var(--aqua);
   transform: translateY(-6px) scale(1.02);
+   cursor: pointer;
 }
 
 
