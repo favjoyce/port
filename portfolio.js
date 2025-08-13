@@ -92,9 +92,9 @@ function toggleMenu() {
   const btn = document.getElementById("githubBtn");
     const text = document.querySelector(".Tiktok");
 
-    btn.addEventListener("click", () => {
-        text.classList.toggle("show"); // toggles visibility on each click
-    });
+    // btn.addEventListener("click", () => {
+    //     text.classList.toggle("show"); // toggles visibility on each click
+    // });
  const gifs = [
       "https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif",  // code rain
       "https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif",  // scrolling code
@@ -162,19 +162,35 @@ function toggleMenu() {
   }, 3000);
 }
 
+console.log(document.getElementById("sectionSearch"));
 
 
 const searchInput = document.getElementById("sectionSearch");
+console.log("Search input found?", searchInput);
 
+if (searchInput) {
   searchInput.addEventListener("keydown", function (e) {
+    console.log("Key pressed:", e.key);
+
     if (e.key === "Enter") {
+      e.preventDefault();
       const value = searchInput.value.trim().toLowerCase();
-      const validSections = ["home", "about", "gallery","contact"];
+      console.log("Value entered:", value);
+
+      const validSections = ['home', 'about', 'gallery', 'contact'];
+      console.log("Section valid?", validSections.includes(value));
 
       if (validSections.includes(value)) {
-        document.getElementById(value).scrollIntoView({ behavior: "smooth" });
+        const target = document.getElementById(value);
+        console.log("Target section:", target);
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth" });
+        } else {
+          console.warn("Section ID not found in DOM.");
+        }
       } else {
         alert("Section not found!");
       }
     }
   });
+}
