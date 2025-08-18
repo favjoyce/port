@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "transitions",
+			"path": "../../Documents/transitions"
+		},
+		{
+			"name": "thacoderPortfo",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "thacoderPortfo"
+	}
+}

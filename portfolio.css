@@ -1334,7 +1334,7 @@ html {
   }
   .languaages p{
    font-size: 11px !important;
-   margin-top: 3px !important;
+   margin-top: 10px !important;
   }
   .project1{
     width: 170px;
@@ -1352,9 +1352,9 @@ html {
     margin-top: -33px;
   }
   .languaages{
-    margin-top:-5px;
+    /* margin-top:-5px; */
     /* background-color: red; */
-    margin-left:5px;
+    /* margin-left:5px; */
   }
   .Hero{
     /* margin-top: 0px; */
