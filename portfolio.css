@@ -1328,13 +1328,22 @@ html {
   }
   .vU{
     font-size: 11px !important;
-    margin-top: 11px;
-    line-height: 12px !important;
-    margin-left: 0;
+    /* margin-top: 11px !important; */
+    /* line-height: 12px !important; */
+    margin-bottom: 0;
+  }
+  .viewUtiv{
+    margin-left: 4px !important;
   }
   .languaages p{
    font-size: 11px !important;
-   margin-top: 10px !important;
+   /* margin-top:2px !important; */
+   /* background-color: red; */
+
+  }
+  .languaages{
+    margin-top: 3px;
+    margin-left: 8px;
   }
   .project1{
     width: 170px;
@@ -1344,12 +1353,16 @@ html {
   .aboutProject h2{
     font-size: 17px;
   }
+  .aboutProject a{
+    /* margin-top: -17px !important; */
+    
+  }
   .list{
     width: 80px !important;
   }
   .aboutProject{
     /* background-color: red; */
-    margin-top: -33px;
+    margin-top: -50px;
   }
   .languaages{
     /* margin-top:-5px; */
