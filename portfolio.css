@@ -67,12 +67,12 @@ body.light-mode{
     background-color: aqua;
     position: absolute;
     bottom: -10px;
-    opacity: 0;
+    display: none;
 }
 .underlin{
     width: 53px;
     height: 3.5px;
-    background-color: aqua;
+    /* background-color: aqua; */
     position: absolute;
     bottom: -10px;
 }
@@ -104,6 +104,12 @@ body.light-mode{
     position: relative;
     transition: all 0.3s ease;
 }
+.pAndImg:active .underline{
+  display: flex;
+}
+.pAndImg:hover .underline{
+  display: flex;
+}
 .home2,.home3,.home4,.home5{
     font-weight: 500;
     color: inherit;
@@ -111,7 +117,7 @@ body.light-mode{
 }
 
 .home{
-    color: aqua;
+    /* color: aqua; */
     /* text-decoration: underline; */
 }
 .drop1{
@@ -708,10 +714,15 @@ align-items: center;
   width: 90%;
   height: 500px;
   background-color: black;
-  border: 2.5px solid aqua;
-  border-top-left-radius: 80px;
-  border-bottom-right-radius: 80px;
+  border: 2.5px solid #ffffff;
+  /* border-top-left-radius: 80px;
+  border-bottom-right-radius: 80px; */
   overflow: hidden;
+  border-radius: 10px;
+}
+.project1:hover{
+/* box-shadow: 2px 2px 2px #00bcd4; */
+cursor: pointer;
 }
 .img{
   width: 100%;
@@ -732,22 +743,7 @@ align-items: center;
     transition: all 0.4s ease-in-out;
 
 }
-.img img{
-  opacity: 0;
-}
-.img video{
-  opacity: 1;
-}
-.img:hover video{
-  opacity: 0;
-}
-.img:hover img{
-  opacity: 1;
-}
-.img:hover img{
-  transform: scale(1.08);
-  cursor: pointer;
-}
+
 .gpText h1{
   color: inherit;
   font-size: 29px;
@@ -937,7 +933,15 @@ html {
 .direct-contact{
   margin:0 !important;
 }
-
+.direct-contact span{
+  border: 2.5px solid #ffffff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
 @keyframes float {
   0% { transform: translateY(0); }
   50% { transform: translateY(-4px); }
@@ -993,7 +997,7 @@ html {
 }
 
 .direct-contact{
-  font-size: 23px;
+  font-size: 15px;
   margin-bottom: 10px;
   width: 300px;
   display: flex;
@@ -1365,13 +1369,14 @@ html {
   }
   .lists p{
     font-size:15px;
+    display: none;
   }
   .html{
         margin-top: 0;
         /* background-color: white; */
     }
     .highlight{
-     font-size: 22px;
+     font-size: 19px;
      /* background-color: #0f0; */
     }
     #hams{
@@ -1589,11 +1594,13 @@ width: 90%;
 }
 
 .direct-contact a:hover {
-  color: aqua;
+  /* color: aqua; */
+  text-decoration: underline;
 }
 
 .direct-contact a:active {
-  color: aqua;
+  /* color: aqua; */
+  text-decoration: underline;
 }
 
 .direct-contact .icon {
@@ -1610,11 +1617,11 @@ width: 90%;
 }
 
 .direct-contact a:hover .icon {
-  color: aqua;
+  /* color: aqua; */
   box-shadow: 0 0 6px aqua;
 }
 .direct-contact a:active .icon {
-  color: aqua;
+  /* color: aqua; */
   box-shadow: 0 0 6px aqua;
 }
 .direct-contact{
